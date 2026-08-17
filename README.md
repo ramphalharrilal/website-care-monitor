@@ -33,7 +33,7 @@ Small businesses often discover website failures after a customer complains—or
 - A responsive static dashboard for GitHub Pages.
 - Automated tests, repository validation, a health endpoint, security headers, and a container build.
 
-The public dashboard uses fictional businesses and sample results. It is a safe portfolio demonstration, not a claim that those organizations are real customers. The command-line monitor performs the live checks.
+The public dashboard uses fictional businesses and sample results. It is a safe portfolio demonstration, not a claim that those organizations are real customers. An automated test verifies that every displayed sample score and status follows the same scoring engine as a live check. The command-line monitor performs the live checks.
 
 ## Run it locally
 

@@ -81,7 +81,9 @@ function render(data) {
 
   elements.siteList.replaceChildren(...data.sites.map(renderSite));
 
-  const actions = data.sites.flatMap((site) => site.issues.map((issue) => renderAction(site, issue)));
+  const actions = [...data.sites]
+    .sort((left, right) => left.score - right.score)
+    .flatMap((site) => site.issues.map((issue) => renderAction(site, issue)));
   elements.actionList.replaceChildren(...actions);
   elements.quietState.hidden = actions.length > 0;
   elements.timeline.replaceChildren(...data.activity.map(renderActivity));

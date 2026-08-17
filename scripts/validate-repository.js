@@ -9,6 +9,7 @@ const requiredFiles = [
   "src/health.js",
   "src/check-site.js",
   "test/health.test.js",
+  "test/demo-data.test.js",
   "docs/case-study.md",
 ];
 
