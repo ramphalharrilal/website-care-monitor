@@ -1,0 +1,70 @@
+{
+  "generatedAt": "2026-08-17T14:32:00.000Z",
+  "resolvedThisMonth": 7,
+  "sites": [
+    {
+      "name": "Harbor Dental",
+      "category": "Local healthcare",
+      "url": "https://example.com/harbor-dental",
+      "status": "healthy",
+      "score": 98,
+      "summary": "Booking path is open and responding quickly.",
+      "responseMs": 421,
+      "tlsDaysRemaining": 74,
+      "issues": []
+    },
+    {
+      "name": "Northstar Electrical",
+      "category": "Home services",
+      "url": "https://example.com/northstar-electrical",
+      "status": "attention",
+      "score": 78,
+      "summary": "The site works, but its certificate needs renewal soon.",
+      "responseMs": 738,
+      "tlsDaysRemaining": 12,
+      "issues": ["Renew the security certificate within 12 days."]
+    },
+    {
+      "name": "Cedar & Stone",
+      "category": "Retail and showroom",
+      "url": "https://example.com/cedar-stone",
+      "status": "healthy",
+      "score": 94,
+      "summary": "Product pages and inquiry path are available.",
+      "responseMs": 563,
+      "tlsDaysRemaining": 51,
+      "issues": []
+    },
+    {
+      "name": "BrightPath Learning",
+      "category": "Education services",
+      "url": "https://example.com/brightpath-learning",
+      "status": "critical",
+      "score": 44,
+      "summary": "The site is online, but families cannot find the expected inquiry form.",
+      "responseMs": 2491,
+      "tlsDaysRemaining": 39,
+      "issues": [
+        "Restore the missing inquiry form so new families can make contact.",
+        "Investigate the slow 2.5 second response."
+      ]
+    }
+  ],
+  "activity": [
+    {
+      "time": "Today, 10:42",
+      "title": "Inquiry path issue prioritized",
+      "description": "BrightPath Learning was reachable, but the expected contact form was missing."
+    },
+    {
+      "time": "Yesterday, 16:18",
+      "title": "Slow response recovered",
+      "description": "Harbor Dental returned to normal speed after a temporary slowdown."
+    },
+    {
+      "time": "Aug 14, 09:05",
+      "title": "Certificate warning opened",
+      "description": "Northstar Electrical received an early renewal warning with 14 days remaining."
+    }
+  ]
+}

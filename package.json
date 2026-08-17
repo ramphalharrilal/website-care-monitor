@@ -1,0 +1,17 @@
+{
+  "name": "website-care-monitor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A client-friendly website health monitor and reporting dashboard.",
+  "scripts": {
+    "start": "node src/server.js",
+    "check": "node src/cli.js config/sites.example.json",
+    "test": "node --test",
+    "validate": "node scripts/validate-repository.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT"
+}
