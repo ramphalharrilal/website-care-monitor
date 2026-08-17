@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="SiteCare turns website health checks into clear actions that protect leads, trust, and revenue.">
+    <meta name="theme-color" content="#07161f">
+    <title>SiteCare — Website Care Monitor</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to dashboard</a>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="SiteCare home">
+        <span class="brand-mark" aria-hidden="true"><span></span></span>
+        <span>SiteCare</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#dashboard">Dashboard</a>
+        <a href="#coverage">What it checks</a>
+        <a class="nav-cta" href="https://github.com/ramphalharrilal/website-care-monitor">View project</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="live-dot"></span> Client-ready website monitoring</p>
+          <h1>Know when your website is <em>costing you customers.</em></h1>
+          <p class="hero-lede">SiteCare translates downtime, slow pages, expiring security certificates, and missing contact forms into plain-English priorities.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#dashboard">Open the demo</a>
+            <a class="button secondary" href="#coverage">See what it protects</a>
+          </div>
+          <p class="demo-note">Interactive portfolio demonstration using fictional businesses and sample data.</p>
+        </div>
+        <aside class="signal-card" aria-label="Monitoring summary">
+          <div class="signal-head">
+            <span>Protection status</span>
+            <span class="status-pill healthy">Monitoring active</span>
+          </div>
+          <div class="signal-score">
+            <span id="hero-score">—</span><small>/100</small>
+          </div>
+          <p>Portfolio health score</p>
+          <div class="signal-lines" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="signal-foot">
+            <span><strong id="hero-sites">—</strong> sites watched</span>
+            <span><strong id="hero-action">—</strong> need action</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="dashboard-shell" id="dashboard" aria-labelledby="dashboard-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Operations dashboard</p>
+            <h2 id="dashboard-title">Website health at a glance</h2>
+          </div>
+          <div class="last-updated"><span class="pulse" aria-hidden="true"></span><span id="updated-at">Loading sample report…</span></div>
+        </div>
+
+        <div class="metrics" id="metrics" aria-label="Portfolio summary">
+          <article class="metric-card"><span>Sites protected</span><strong id="metric-total">—</strong><small>Across the portfolio</small></article>
+          <article class="metric-card"><span>Healthy now</span><strong id="metric-healthy">—</strong><small>Ready for customers</small></article>
+          <article class="metric-card"><span>Needs attention</span><strong id="metric-action">—</strong><small>Prioritized below</small></article>
+          <article class="metric-card"><span>Incidents resolved</span><strong id="metric-resolved">—</strong><small>This month</small></article>
+        </div>
+
+        <div class="dashboard-grid">
+          <section class="panel sites-panel" aria-labelledby="sites-heading">
+            <div class="panel-head">
+              <div><span class="kicker">Protected sites</span><h3 id="sites-heading">Customer-facing websites</h3></div>
+              <div class="legend" aria-label="Status legend"><span class="healthy-dot"></span>Healthy <span class="attention-dot"></span>Attention <span class="critical-dot"></span>Critical</div>
+            </div>
+            <div class="site-list" id="site-list" aria-live="polite"></div>
+          </section>
+
+          <aside class="panel action-panel" aria-labelledby="action-heading">
+            <div class="panel-head">
+              <div><span class="kicker">Priority queue</span><h3 id="action-heading">What to fix next</h3></div>
+            </div>
+            <ol class="action-list" id="action-list"></ol>
+            <div class="quiet-state" id="quiet-state" hidden>Everything looks good. Keep monitoring.</div>
+          </aside>
+        </div>
+
+        <section class="panel timeline-panel" aria-labelledby="timeline-heading">
+          <div class="panel-head">
+            <div><span class="kicker">Recent activity</span><h3 id="timeline-heading">Issues caught before customers called</h3></div>
+          </div>
+          <div class="timeline" id="timeline"></div>
+        </section>
+      </section>
+
+      <section class="coverage" id="coverage" aria-labelledby="coverage-title">
+        <div class="coverage-copy">
+          <p class="eyebrow">Built around business risk</p>
+          <h2 id="coverage-title">Technical checks, translated into useful decisions.</h2>
+          <p>A business owner should not have to decode server logs. SiteCare shows what happened, who it may affect, and the next practical action.</p>
+        </div>
+        <div class="coverage-grid">
+          <article><span class="coverage-number">01</span><h3>Can customers get in?</h3><p>Availability and error checks reveal outages and broken pages.</p></article>
+          <article><span class="coverage-number">02</span><h3>Will they wait?</h3><p>Response-time checks flag pages slow enough to lose attention and leads.</p></article>
+          <article><span class="coverage-number">03</span><h3>Does the site feel safe?</h3><p>Certificate-expiry warnings protect trust before a browser shows an alert.</p></article>
+          <article><span class="coverage-number">04</span><h3>Can they contact you?</h3><p>Contact-form presence checks catch a missing path to inquiries.</p></article>
+        </div>
+      </section>
+
+      <section class="closing">
+        <div>
+          <p class="eyebrow">From alert to action</p>
+          <h2>Less technical noise. Fewer missed customers.</h2>
+        </div>
+        <a class="button primary" href="https://github.com/ramphalharrilal/website-care-monitor">Explore the build</a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"><span></span></span><span>SiteCare</span></a>
+      <p>Designed and built by <a href="https://ramphalharrilal.github.io/">Ramphal Harrilal</a>.</p>
+      <p>Portfolio demo · Fictional monitoring data</p>
+    </footer>
+  </body>
+</html>

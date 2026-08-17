@@ -1,0 +1,19 @@
+{
+  "settings": {
+    "timeoutMs": 8000,
+    "slowResponseMs": 2000,
+    "certificateWarningDays": 21
+  },
+  "sites": [
+    {
+      "name": "Example Storefront",
+      "url": "https://example.com",
+      "expectContactForm": false
+    },
+    {
+      "name": "Example Service Site",
+      "url": "https://example.org",
+      "expectContactForm": false
+    }
+  ]
+}
