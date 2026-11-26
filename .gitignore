@@ -3,3 +3,5 @@ reports/*.json
 .env
 .DS_Store
 coverage/
+config/sites.private.json
+config/*.local.json
